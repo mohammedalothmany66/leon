@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     صفحة Leon Agency - صفحة هبوط (Landing Page)
+     الأقسام: Navbar - Hero - Features - Services - Portfolio - About - Contact - Footer
+     ============================================================ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leon | Creative &amp; Minimal Agency</title>
+
+  <!-- خطوط جوجل (Google Fonts): Work Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- مكتبة فونت أوسم (محلية): ملف all.min.css المنسوخ من مجلد css في المكتبة -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!-- ملف التنسيق الخاص بالصفحة -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== 1) الشريط العلوي (Navbar) ========== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <!-- الشعار -->
+      <a href="#hero" class="logo" aria-label="Leon home">I<span>O</span></a>
+      <!-- روابط التنقل بين الأقسام -->
+      <nav class="menu" id="menu" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- زر القائمة (أيقونة من فونت أوسم) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== 2) القسم الرئيسي (Hero) ========== -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <h1>Hello There!</h1>
+        <p>We are Leon - Super Creative &amp; Minimal Agency Web Template</p>
+      </div>
+    </section>
+
+    <!-- ========== 3) المميزات الثلاث (Features) ========== -->
+    <section class="features">
+      <div class="container features__grid">
+
+        <!-- ميزة 1 -->
+        <article class="feature">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <h3>Tell Us Your Idea</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab.</p>
+        </article>
+
+        <!-- ميزة 2 (مميزة بالظل كما في القالب) -->
+        <article class="feature feature--raised">
+          <i class="fa-regular fa-gem"></i>
+          <h3>We Will Do All The Work</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab.</p>
+        </article>
+
+        <!-- ميزة 3 -->
+        <article class="feature">
+          <i class="fa-solid fa-earth-americas"></i>
+          <h3>Your Product Is Worldwide</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== 4) الخدمات (Services) ========== -->
+    <section class="section" id="services">
+      <div class="container">
+        <!-- عنوان القسم: كلمة كبيرة باهتة + جملة وصفية -->
+        <header class="section-title">
+          <span class="ghost-word" aria-hidden="true">services</span>
+          <h2>Don't be busy, be productive</h2>
+        </header>
+
+        <div class="services">
+          <!-- قائمة الخدمات الأربع -->
+          <div class="services__list">
+            <article class="service">
+              <i class="fa-solid fa-pen"></i>
+              <div>
+                <h3>Graphic Design</h3>
+                <p>Graphic design is the process of visual communication and problem-solving using type, photography and illustration.</p>
+              </div>
+            </article>
+
+            <article class="service">
+              <i class="fa-solid fa-gears"></i>
+              <div>
+                <h3>Web Design</h3>
+                <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites.</p>
+              </div>
+            </article>
+
+            <article class="service">
+              <i class="fa-solid fa-sliders"></i>
+              <div>
+                <h3>UI &amp; UX</h3>
+                <p>Process of enhancing user satisfaction with a product by improving usability, accessibility and pleasure.</p>
+              </div>
+            </article>
+
+            <article class="service">
+              <i class="fa-solid fa-laptop-code"></i>
+              <div>
+                <h3>Web Development</h3>
+                <p>Web development is a broad term for the work involved in developing a website for the internet or an intranet.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- الصورة الجانبية: مربع ملوّن خلفه إطار داكن (بالـ CSS) -->
+          <div class="frame frame--dark" role="img" aria-label="Mountain peak">
+            <img src="images/landing.jpg" alt="Snowy mountain range">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5) الأعمال (Portfolio) ========== -->
+    <section class="section section--grey" id="portfolio">
+      <div class="container">
+        <header class="section-title">
+          <span class="ghost-word" aria-hidden="true">portfolio</span>
+          <h2>If you do it right, it will last forever.</h2>
+        </header>
+
+        <div class="portfolio__grid">
+          <!-- مشروع 1 -->
+          <article class="project">
+            <div class="project__thumb thumb-a"><i class="fa-solid fa-laptop"></i></div>
+            <div class="project__body">
+              <h3>Project Here</h3>
+              <p>My creative ability is very difficult to measure because it can manifest in so many surprising ways.</p>
+            </div>
+          </article>
+
+          <!-- مشروع 2 -->
+          <article class="project">
+            <div class="project__thumb thumb-b"><i class="fa-solid fa-book-open"></i></div>
+            <div class="project__body">
+              <h3>Project Here</h3>
+              <p>My creative ability is very difficult to measure because it can manifest in so many surprising ways.</p>
+            </div>
+          </article>
+
+          <!-- مشروع 3 -->
+          <article class="project">
+            <div class="project__thumb thumb-c"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="project__body">
+              <h3>Project Here</h3>
+              <p>My creative ability is very difficult to measure because it can manifest in so many surprising ways.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- زر عرض المزيد -->
+        <div class="center"><a href="#contact" class="btn">Show Me More</a></div>
+      </div>
+    </section>
+
+    <!-- ========== 6) من نحن (About) ========== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-title">
+          <span class="ghost-word" aria-hidden="true">about</span>
+          <h2>Less is more work</h2>
+        </header>
+
+        <div class="about">
+          <!-- الصورة مع الشكل L الملوّن -->
+          <div class="frame frame--teal" role="img" aria-label="Plant on a desk">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+
+          <!-- النص -->
+          <div class="about__text">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 7) التواصل (Contact) ========== -->
+    <section class="section section--grey" id="contact">
+      <div class="container">
+        <header class="section-title">
+          <span class="ghost-word" aria-hidden="true">contact</span>
+          <h2>We are born to create</h2>
+        </header>
+
+        <div class="contact">
+          <h3>Feel free to drop us a line at:</h3>
+          <a class="contact__mail" href="mailto:leonagency@mail.com">leonagency@mail.com</a>
+
+          <!-- روابط التواصل الاجتماعي (أيقونات Brands من فونت أوسم) -->
+          <div class="social">
+            <span>Find us on social networks:</span>
+            <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== 8) التذييل (Footer) ========== -->
+  <footer class="footer">
+    <p>&copy; 2026 - <span>Leon</span>. All Rights Reserved</p>
+  </footer>
+
+  <!-- سكربت صغير: فتح وإغلاق القائمة على الشاشات الصغيرة -->
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-open');   // إظهار/إخفاء القائمة
+      toggle.setAttribute('aria-expanded', open);       // لقارئات الشاشة
+    });
+    // إغلاق القائمة عند الضغط على أي رابط
+    menu.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => menu.classList.remove('is-open')));
+  </script>
+</body>
+</html>
